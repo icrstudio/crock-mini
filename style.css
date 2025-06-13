@@ -1,0 +1,70 @@
+/* Apple-style minimalistički dizajn */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+header h1 {
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+header p {
+  font-size: 22px;
+  color: #666;
+  margin-top: 20px;
+}
+
+section {
+  max-width: 800px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  color: #444;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  margin: 100px 0 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 40px;
+  }
+  header p {
+    font-size: 18px;
+  }
+  section h2 {
+    font-size: 26px;
+  }
+  section p {
+    font-size: 16px;
+  }
+}
