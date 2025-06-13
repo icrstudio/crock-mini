@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Crocky mini – Pametni 3D štampač</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s ease-out forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
 </head>
 <body>
   <header>
@@ -12,7 +25,7 @@
     <p>Pametni 3D štampač nove generacije</p>
   </header>
 
-  <section>
+  <section class="fade-in">
     <h2>Šta je Crocky mini?</h2>
     <p>Crocky mini je naš pametni 3D štampač sa ugrađenim softverom za automatsku klasifikaciju 3D modela i optimalna podešavanja za štampu. Namenjen je svima koji žele da štampaju – bez komplikacija.</p>
   </section>
