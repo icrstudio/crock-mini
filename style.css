@@ -144,7 +144,7 @@ ul.nav-links.desktop-menu li a:hover {
 }
 
 .hero-image {
-  position: absolute;
+  position: cover;
   width: 180vw;
   height: 140vh;
   background: url('CROCKY MINI1.png') center center / contain no-repeat;
