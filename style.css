@@ -88,9 +88,9 @@ nav.scrolled {
 }
 
 .hero-image {
-  background: url('CROCKY MINI1.png') no-repeat center center;
+  background: url('printer.png') no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: 150vh;
   position: relative;
   display: flex;
   align-items: center;
