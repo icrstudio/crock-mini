@@ -8,26 +8,37 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Animacija hero teksta pri skrolovanju
+// Animacija hero teksta i fade pri skrolovanju
 const heroText = document.getElementById("heroText");
+const fade = document.getElementById("fade");
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 20) {
-    heroText.style.opacity = 1;
-    heroText.style.transform = "translateY(-50%) translateY(-20px)";
+  const scrollY = window.scrollY;
+
+  if (scrollY > 10) {
+    heroText.classList.add("visible");
+    fade.classList.add("visible");
+  } else {
+    heroText.classList.remove("visible");
+    fade.classList.remove("visible");
   }
 });
 
 // Hamburger meni
 const hamburger = document.getElementById("hamburger");
 const overlay = document.getElementById("overlay");
+const menu = document.getElementById("menu");
 const menuLinks = document.querySelectorAll(".overlay a");
 
 hamburger.addEventListener("click", () => {
   overlay.classList.toggle("active");
+  menu.classList.toggle("active");
+  document.body.classList.toggle("no-scroll");
 });
 
 menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
     overlay.classList.remove("active");
+    menu.classList.remove("active");
+    document.body.classList.remove("no-scroll");
   });
 });
