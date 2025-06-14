@@ -1,81 +1,63 @@
+<!-- HTML FILE -->
 <!DOCTYPE html>
 <html lang="sr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crocky Mini – Pametni 3D štampač</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav id="navbar">
-      <h1>Crocky mini</h1>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crocky mini – Pametni 3D štampač</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <h1>Crocky mini</h1>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="overlay" id="overlay">
       <div class="menu" id="menu">
         <a href="#o-nama">O nama</a>
         <a href="#specs">Specifikacije</a>
         <a href="#ai">AI Softver</a>
-        <a href="#dogma">Dogma</a>
         <a href="#kontakt">Kontakt</a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="overlay" id="overlay"></div>
+  <header>
+    <div class="hero-image" id="heroImage"></div>
+    <div class="hero-text" id="heroText">
+      <h1>CROCKY MINI</h1>
+      <p>Think Less. Create More.</p>
+    </div>
+  </header>
 
-    <header>
-      <div class="hero-image" id="heroImage"></div>
-      <div class="fade-mask" id="fade"></div>
-      <div class="hero-text" id="heroText">
-        <h1>Crocky mini</h1>
-        <p>Think Less. Create More.</p>
-      </div>
-    </header>
+  <section class="section" id="o-nama">
+    <h2>O nama</h2>
+    <p>Mi smo Luka Golić i Ilija Pajkanović – tim koji stoji iza Crocky Mini projekta.</p>
+    <a class="btn" href="#specs">Saznaj više</a>
+  </section>
 
-    <section id="o-nama" class="section">
-      <div class="section-content">
-        <h2>O nama</h2>
-        <p>Upoznajte tim iza Crocky Mini 3D štampača.</p>
-        <a href="#o-nama-page" class="learn-more-btn">Saznaj više</a>
-      </div>
-    </section>
+  <section class="section" id="specs">
+    <h2>Tehničke karakteristike</h2>
+    <p>Precizna FDM štampa, automatsko nivelisanje, Wi-Fi konekcija, mobilna kontrola.</p>
+    <a class="btn" href="#ai">Saznaj više</a>
+  </section>
 
-    <section id="specs" class="section">
-      <div class="section-content">
-        <h2>Specifikacije</h2>
-        <p>Visoka preciznost, FDM tehnologija, povezivanje preko Wi-Fi i mobilne aplikacije.</p>
-        <a href="#specs-page" class="learn-more-btn">Saznaj više</a>
-      </div>
-    </section>
+  <section class="section" id="ai">
+    <h2>AI Softver</h2>
+    <p>Naš AI automatski prepoznaje modele i generiše optimalne parametre za štampu.</p>
+    <a class="btn" href="#kontakt">Saznaj više</a>
+  </section>
 
-    <section id="ai" class="section">
-      <div class="section-content">
-        <h2>Softver i AI</h2>
-        <p>Naš AI softver automatski klasifikuje i podešava parametre za 3D štampu.</p>
-        <a href="#ai-page" class="learn-more-btn">Saznaj više</a>
-      </div>
-    </section>
+  <section class="section" id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Pišite nam na <a href="mailto:icrstudio2023@gmail.com">icrstudio2023@gmail.com</a></p>
+  </section>
 
-    <section id="dogma" class="section">
-      <div class="section-content">
-        <h2>Naša dogma</h2>
-        <p>Verujemo u jednostavnost. Verujemo u pametnu tehnologiju. Verujemo u vašu kreativnost.</p>
-        <a href="#dogma-page" class="learn-more-btn">Saznaj više</a>
-      </div>
-    </section>
+  <footer>
+    <p>© 2025 Crocky mini | ICR Studio</p>
+  </footer>
 
-    <section id="kontakt" class="section">
-      <div class="section-content">
-        <h2>Kontakt</h2>
-        <p>Pišite nam na <a href="mailto:icrstudio2023@gmail.com">icrstudio2023@gmail.com</a></p>
-        <a href="#kontakt-page" class="learn-more-btn">Saznaj više</a>
-      </div>
-    </section>
-
-    <footer>
-      <p>© 2025 Crocky Mini | ICR Studio</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
