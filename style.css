@@ -144,10 +144,12 @@ ul.nav-links.desktop-menu li a:hover {
 }
 
 .hero-image {
-  position: cover;
-  width: 180vw;
-  height: 140vh;
-  background: url('CROCKY MINI1.png') center center / contain no-repeat;
+  position: fixed; /* ili absolute ako ti je potrebno u nekom kontekstu */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('CROCKY MINI1.png') center center / cover no-repeat;
   z-index: 1;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
