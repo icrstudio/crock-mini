@@ -10,16 +10,18 @@ window.addEventListener("scroll", () => {
 
 // Animacija hero teksta i fade pri skrolovanju
 const heroText = document.getElementById("heroText");
-const fade = document.getElementById("fade");
+const heroImage = document.getElementById("heroImage");
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
+  const fadeThreshold = 300;
+
+  let opacity = Math.min(scrollY / fadeThreshold, 1);
+  heroImage.style.opacity = 1 - opacity;
 
   if (scrollY > 10) {
     heroText.classList.add("visible");
-    fade.classList.add("visible");
   } else {
     heroText.classList.remove("visible");
-    fade.classList.remove("visible");
   }
 });
 
