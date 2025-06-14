@@ -7,6 +7,22 @@ window.addEventListener("load", () => {
     let latestScrollY = 0;
     let ticking = false;
   
+    const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("overlay");
+
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  overlay.style.display = menu.classList.contains("active") ? "block" : "none";
+  document.body.classList.toggle("menu-open");
+});
+
+// Klik na overlay zatvara meni
+overlay.addEventListener("click", () => {
+  menu.classList.remove("active");
+  overlay.style.display = "none";
+  document.body.classList.remove("menu-open");
+});    
     function onScroll() {
       latestScrollY = window.scrollY;
       requestTick();
